@@ -7,6 +7,7 @@
 body{
     background-color: #F5F0E6;
     margin: 0%;
+    margin-top: 0%;
 }
 
 h1{
@@ -17,8 +18,8 @@ h2{
     color: #5C4033;
 }
 
-div{
-    background-color: #e6dfd4;
+a{
+    text-decoration: none;
 }
 
 main{
@@ -27,13 +28,60 @@ main{
 }
 
 header, footer{
-    background-color: #A4BAB7;
+    background-color: #a4bab7a2;
     margin:0 auto;
     padding-left: 2%;
+    padding-right: 2%;
+}
+
+header{
+    position: sticky;
+    top: 0%;
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 4rem;
+    align-items: center;
+}
+
+header div{
+    background:none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+header a svg{
+    width: 15%;
+}
+
+header nav{
+    display: flex;
+    gap: 5%;
+}
+
+header nav a{
+    background-color: #e6dfd4;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12), 0 3px 8px rgba(0, 0, 0, 0.336);
+    padding: 0.5rem;
+}
+
+header nav a:hover{
+    background-color: #1E5D50;
+    color: #e6dfd4;
+    box-shadow: none;
 }
 
 section{
-    margin-bottom: 5%;
+    margin-top: 1%;
+}
+
+div{
+    margin-bottom: 2%;
+    margin-top: 1%;
+    background-color: #e6dfd4;
+    padding:0.9rem 1.4rem;
+    border-radius:20px;
 }
 
 .triple{
@@ -41,13 +89,12 @@ section{
     /* grid-template-rows: repeat(2, 1fr); */
     grid-template-columns: repeat(3, 1fr);
     gap: 5% 1%;
+    margin-bottom: 2%;
 }
 
 .triple div{
     width: 85%;
     display:inline-block;
-    padding:0.9rem 1.4rem;
-    border-radius:20px;
     font-weight:600;
     box-shadow: 0 10px 25px rgba(0,0,0,.12), 0 3px 8px rgba(0, 0, 0, 0.336);
 }
