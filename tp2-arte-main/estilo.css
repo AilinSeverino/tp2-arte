@@ -1,0 +1,148 @@
+*{
+    color: #2c2a28;
+    font-family: "Lora", serif;
+    max-width: 100%;
+}
+
+body{
+    background-color: #F5F0E6;
+    margin: 0%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+h1{
+    color: #1E5D50;
+    font-family: "Cinzel Decorative", serif;
+}
+h2{
+    color: #5C4033;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    width:92%;
+    margin:0 auto;
+    flex: 1;
+}
+
+footer{
+    position: static;
+    bottom: 0;
+}
+
+header, footer{
+    background-color: #a4bab7a2;
+    margin:0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+footer{
+    clear: both;
+    position: static;
+    width: 96%;
+    
+}
+
+header, footer section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    align-items: center;
+}
+
+header{
+    position: sticky;
+    top: 0%;
+    margin-top: 0%;
+    width: 93.25%;
+}
+
+header div, footer div{
+    background:none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -0.5rem;
+}
+
+header div a, footer div a{
+    display: flex;
+    gap: 3%;
+    align-content: center;
+}
+
+header a svg, footer a svg{
+    width: 7%;
+}
+
+/* footer p{
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-start;
+} */
+
+main section div svg{
+    width: 15%;
+    display: flex;
+    justify-self: flex-end;
+}
+
+header nav{
+    display: flex;
+    gap: 5%;
+}
+
+header nav a, main section a{
+    background-color: #e6dfd4;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12), 0 3px 8px rgba(0, 0, 0, 0.336);
+    padding: 0.5rem;
+}
+
+header nav a:hover, main section a:hover{
+    background-color: #1E5D50;
+    color: #e6dfd4;
+    box-shadow: none;
+}
+
+section{
+    margin-top: 1%;
+}
+
+div{
+    margin-bottom: 1%;
+    background-color: #e6dfd4;
+    padding:0.9rem 1.4rem;
+    border-radius:20px;
+}
+
+div h6{
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    color: maroon;
+}
+
+.triple{
+    display: grid;
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2% 1%;
+    margin-bottom: 2%;
+}
+
+.triple div{
+    width: 85%;
+    font-weight:600;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12), 0 3px 8px rgba(0, 0, 0, 0.336);
+}
+
+.triple div:hover{
+    background-color: #C9A66B;
+    box-shadow: none;
+}
