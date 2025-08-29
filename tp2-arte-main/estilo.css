@@ -1,16 +1,12 @@
 *{
     color: #2c2a28;
     font-family: "Lora", serif;
-    max-width: 100%;
 }
 
 body{
     background-color: #F5F0E6;
-    margin: 0%;
-    margin-top: 0%;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
+    margin: 0;
+    min-height: 100vh;
 }
 
 h1{
@@ -25,43 +21,37 @@ a{
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
 main{
     width:92%;
     margin:0 auto;
-    flex: 1;
-}
-
-footer{
-    position: static;
-    bottom: 0;
-}
-
-header, footer{
-    background-color: #a4bab7a2;
-    margin:0 auto;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-footer{
-    clear: both;
-    position: static;
-    width: 96%;
-    
-}
-
-header, footer section{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 4rem;
-    align-items: center;
+    padding: 2rem 0;
 }
 
 header{
+    background-color: #a4bab7a2;
+    margin: 0%;
     position: sticky;
     top: 0%;
-    margin-top: 0%;
-    width: 93.25%;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+}
+
+footer{
+    margin-top: 2%;
+    padding-left: 2%;
+    background-color: #a4bab7a2;
+    padding: 1rem;
+    text-align: center;
 }
 
 header div, footer div{
@@ -73,7 +63,7 @@ header div, footer div{
 
 header div a, footer div a{
     display: flex;
-    gap: 3%;
+    gap: 1rem;
     align-content: center;
 }
 
@@ -81,28 +71,65 @@ header a svg, footer a svg{
     width: 7%;
 }
 
-/* footer p{
+footer p{
     display: flex;
-    align-self: flex-end;
-    justify-self: flex-start;
-} */
+    align-self: center;
+}
+
+footer section{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+footer section nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 45%;
+    gap: 3%;
+}
+
+footer section nav a{
+    display: flex;
+    gap: 7%;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+footer section nav a:hover{
+    background-color: #C9A66B;
+    color: #e6dfd4;
+    box-shadow: none;
+}
+
+footer section nav a svg{
+    width: 30%;
+}
 
 main section div svg{
     width: 15%;
     display: flex;
     justify-self: flex-end;
+    align-self: flex-end;
+    cursor: pointer;
 }
 
 header nav{
     display: flex;
-    gap: 5%;
+    gap: 1.5rem;
 }
 
-header nav a, main section a{
+header nav a, main section a, footer section nav a{
     background-color: #e6dfd4;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,.12), 0 3px 8px rgba(0, 0, 0, 0.336);
     padding: 0.5rem;
+}
+
+main section a{
+    margin-top: 5%;
 }
 
 header nav a:hover, main section a:hover{
@@ -145,4 +172,119 @@ div h6{
 .triple div:hover{
     background-color: #C9A66B;
     box-shadow: none;
+}
+
+/* contacto estilos */
+/* --- ESTILOS PARA LA PÁGINA DE CONTACTO --- */
+
+.contacto {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: #e6dfd4;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12), 0 3px 8px rgba(0, 0, 0, 0.336);
+}
+
+.contacto form {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1.2rem;
+}
+
+.contacto label {
+    font-weight: 600;
+    color: #5C4033;
+}
+
+.contacto input, .contacto textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: "Lora", serif;
+    font-size: 1rem;
+    background-color: #F5F0E6;
+}
+
+.contacto input:focus, .contacto textarea:focus {
+    outline: none;
+    border-color: #1E5D50;
+    box-shadow: 0 0 5px #1e5d507a;
+}
+
+.contacto button {
+    background-color: #e6dfd4;
+    color: #2c2a28;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    cursor: pointer;
+    justify-self: flex-start;
+}
+
+.contacto button:hover {
+    background-color: #1E5D50;
+    color: #e6dfd4;
+    box-shadow: none;
+}
+
+/* enviado estilos */
+.enviado {
+    width: 80%;
+    margin: 4rem auto;
+    padding: 3rem;
+    background-color: #e6dfd4;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12), 0 3px 8px rgba(0, 0, 0, 0.336);
+    text-align: center;
+}
+
+.enviado h2 {
+    margin-bottom: 1.5rem;
+}
+
+.enviado p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.enviado a {
+    display: inline-block;
+    background-color: #e6dfd4;
+    color: #2c2a28;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.enviado a:hover {
+    background-color: #1E5D50;
+    color: #e6dfd4;
+    box-shadow: none;
+}
+
+/* promo estilos */
+.promo {
+    background-color: #C9A66B;
+    color: #e6dfd4;
+    text-align: center;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    max-width: 25%;
+    z-index: 1000;
+    border: 3px solid #1E5D50;
+    border-radius: 10px 10px 0px 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
